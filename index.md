@@ -3,7 +3,7 @@
 ---
 
 ## [Flickr Photo Density Map](/Portfolio/Maps/Flickr)
-<img src="images/Flickr_Map.png"/>
+<img src="images/Flickr_Map.png"/> <br>
 Using Flickr’s API, I counted every instance of a geotagged photo for each city and mapped them using a dynamic hex-grid choropleth map. Using the bottom slider or the legend’s inputs, you can change the classification of the data, allowing you to see local variation that would be otherwise invisible in a small-scale (i.e. zoomed out) map. Clicking on any location will show you some photos taken there, as well as a link to Google Street View.
 <p style="text-align: center; color:grey;">**<br>
 QGIS | Mapbox GL JS | Python | Javascript </p>
