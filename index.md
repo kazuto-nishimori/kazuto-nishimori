@@ -4,12 +4,12 @@
 
 ### Category Name 1 
 
-[Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Flickr Photo Density Map](/)
+<img src="images/Flickr_Map.png"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Arizona Border Death Map](/pdf/sample_presentation.pdf)
+<img src="images/Arizona_Map.png"/>
 
 ---
 [Project 3 Title](http://example.com/)
