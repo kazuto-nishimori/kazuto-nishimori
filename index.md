@@ -4,16 +4,17 @@
 
 ### Category Name 1 
 
-[Flickr Photo Density Map](/)
+[Flickr Photo Density Map](/Portfolio/Maps/FLickr)
 <img src="images/Flickr_Map.png"/>
+description
 
 ---
-[Arizona Border Death Map](/pdf/sample_presentation.pdf)
+[Arizona Border Death Map](/Portfolio/Maps/Arizona-Migration)
 <img src="images/Arizona_Map.png"/>
 
 ---
 [Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="lab9"/>
 
 ---
 
