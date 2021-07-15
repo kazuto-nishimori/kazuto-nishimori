@@ -6,7 +6,7 @@
 <img src="images/Flickr_Map.png"/><br>
 Using Flickr’s API, I counted every instance of a geotagged photo for each city and mapped them using a dynamic hex-grid choropleth map. Using the bottom slider or the legend’s inputs, you can change the classification of the data, allowing you to see local variation that would be otherwise invisible in a small-scale (i.e. zoomed out) map. Clicking on any location will show you some photos taken there, as well as a link to Google Street View.
 <p style="text-align: center; color:grey;">**<br>
-QGIS | Mapbox GL JS | Python | Javascript </p>
+QGIS | Mapbox GL JS | Python | GeoPandas | Javascript </p>
 
 ---
 
@@ -29,9 +29,9 @@ R Studio | GeoDa | PostGIS/PostgreSQL | QGIS </p>
 
 ## <a href="/Open-Source-GIS/lab8" target="_blank">Reproducibility and replicability</a>
 <a href="/Open-Source-GIS/lab8" target="_blank"><img src="images/Lab8.png"/></a><br>
-This lab has two large goals. Firstly, we will reproduce a vulnerability map published in Applied Geography by Malcolm, Weaver, and Krakowka using the datasets and methodologies outlined in their article. Secondly, we will critique the methods used by the authors and discuss the broader issue of replicability in vulnerability analysis. This lab is an opportunity to dive deep into the reproducibility and replicability discussion that is becoming a hot issue in the social science community.
+Reproducibility and replicability are arguably the greatest issues that social science (and natural science) research faces at this moment. In geography, studying reproducibility is complicated since no two places are the same (that's the point of the whole discipline!). However, we can test replicability using the same methods and data that authors use in their research (or can we?). Here, I try to replicate a vulnerability assessment of Malawi and compare my results with the authors'.
 <p style="text-align: center; color:grey;">**<br>
-R Studio | GeoDa | PostGIS/PostgreSQL | QGIS </p>
+PostGIS/PostgreSQL | QGIS </p>
 
 ---
 
