@@ -25,6 +25,22 @@ QGIS | Mapbox GL JS | Mapbox Studio | Javascript </p>
 
 ---
 
+## <a href="/Open-Source-GIS/lab6" target="_blank">OSM and PostGIS for vulnerability assessment</a>
+<a href="/Open-Source-GIS/lab6" target="_blank"><img src="images/Lab6.png"/></a><br>
+I used OpenStreetMap (OSM) and Tanzania Resilience Academy (RA) data to quantify a dimension of disaster vulnerability, and created a visualization at the sub-ward level to aid policy action. I specifically looked at the vulnerability caused by the build-up of rubbish in areas that are near existing drain blockages, but are inaccessible by vehicle. The geo-analysis was done using PostGIS.
+<p style="text-align: center; color:grey;">**<br>
+PostGIS/PostgreSQL | QGIS </p>
+
+---
+
+## <a href="/Open-Source-GIS/lab3" target="_blank">Comparing quality of DEM raster datasets</a>
+<a href="/Open-Source-GIS/lab3" target="_blank"><img src="images/Lab3.png"/></a><br>
+I compared the data quality of two DEM raster datasets, ASTER and SRTM in my study region of Mount Kilimanjaro using a terrain analysis program SAGA. I made sense of the  areas of low resolution in the SRTM data by looking at its metadata (i.e. data provenance) and by considering the data capture method. I also analyzed how this raster error propagates when performing terrain analysis on the problematic regions.
+<p style="text-align: center; color:grey;">**<br>
+SAGA | QGIS </p>
+
+---
+
 ## <a href="/Open-Source-GIS/lab9" target="_blank">Network, textual, and spatial analysis of Tweets</a>
 <a href="/Open-Source-GIS/lab9" target="_blank"><img src="images/Lab9.png"/></a><br>
 Geotagged tweets can be useful in the study of natural disasters and could potentially be used as a tool for emergency responders. I downloaded geotagged tweets to rStudio through the API to perform network and textual analysis and then used PostGIS and GeoDa to for spatial analysis. Specifically, I examined twitter activity during Hurricane Dorian that devastated the Bahamas and affected the East Coast of the United States.
@@ -38,22 +54,6 @@ R Studio | GeoDa | PostGIS/PostgreSQL | QGIS </p>
 Reproducibility and replicability are arguably the greatest issues that social science (and natural science) research faces at this moment. In geography, studying reproducibility is complicated since no two places are the same (that's the point of the whole discipline!). However, we can test replicability using the same methods and data that authors use in their research (or can we?). Here, I try to replicate a vulnerability assessment of Malawi and compare my results with the authors'.
 <p style="text-align: center; color:grey;">**<br>
 PostGIS/PostgreSQL | QGIS </p>
-
----
-
-## <a href="/Open-Source-GIS/lab6" target="_blank">OSM and PostGIS for vulnerability assessment</a>
-<a href="/Open-Source-GIS/lab6" target="_blank"><img src="images/Lab6.png"/></a><br>
-I used OpenStreetMap (OSM) and Tanzania Resilience Academy (RA) data to quantify a dimension of disaster vulnerability, and create a visualization at the sub-ward level to aid policy action. I specifically looked at the vulnerability caused by the build-up of rubbish in areas that are near existing drain blockages, but are inaccessible by vehicle. The geo-analysis was done using PostGIS.
-<p style="text-align: center; color:grey;">**<br>
-PostGIS/PostgreSQL | QGIS </p>
-
----
-
-## <a href="/Open-Source-GIS/lab3" target="_blank">Comparing quality of DEM raster datasets</a>
-<a href="/Open-Source-GIS/lab3" target="_blank"><img src="images/Lab3.png"/></a><br>
-I compared the data quality of two DEM raster datasets, ASTER and SRTM in my study region of Mount Kilimanjaro using a terrain analysis program SAGA. I made sense of the  areas of low resolution in the SRTM data by looking at its metadata (i.e. data provenance) and by considering the data capture method. I also analyzed how this raster error propagates when performing terrain analysis on the problematic regions.
-<p style="text-align: center; color:grey;">**<br>
-SAGA | QGIS </p>
 
 ---
 
