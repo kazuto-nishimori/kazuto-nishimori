@@ -34,5 +34,29 @@ This lab has two large goals. Firstly, we will reproduce a vulnerability map pub
 R Studio | GeoDa | PostGIS/PostgreSQL | QGIS </p>
 
 ---
+
+## [OSM Data and PostGIS for vulnerability assessment](/Open-Source-GIS/lab6)
+<img src="images/Lab6.png"/><br>
+I used OpenStreetMap (OSM) and Tanzania Resilience Academy (RA) data to quantify a dimension of vulnerability, and create a visualization at the sub-ward level to aid policy action. I specifically looked at the vulnerability caused by the build-up of rubbish in areas that are near existing drain blockages, but are inaccessible by vehicle. The geo-analysis was done using PostGIS.
+<p style="text-align: center; color:grey;">**<br>
+PostGIS/PostgreSQL | QGIS </p>
+
+---
+
+## [Comparing quality of DEM raster datasets](/Open-Source-GIS/lab3)
+<img src="images/Lab3.png"/><br>
+I compared the data quality of two DEM raster datasets, ASTER and SRTM in my study region of Mount Kilimanjaro using a terrain analysis program SAGA. I made sense of the  areas of low resolution in the SRTM data by looking at its metadata (i.e. data provenance) and by considering the data capture method. I also analyzed how this raster error propagates when performing terrain analysis on the problematic regions.
+<p style="text-align: center; color:grey;">**<br>
+SAGA | QGIS </p>
+
+---
+
+## [Creating open source tool for QGIS](/Open-Source-GIS/lab1)
+<img src="images/Lab1.png"/><br>
+As an exercise and introduction to open source GIS, I made a QGIS model with an open source license and a help document. The model was designed to be used in urban geography analysis, specifically for distance-decay analysis that conceptualize the urban space as being organized radially out from the central business district. The tool calculates the distance and direction with respect to the central business district for each polygon in the input shapefile. I tested the model with census data and plotted it using DataPlotly.
+<p style="text-align: center; color:grey;">**<br>
+DataPlotly | QGIS </p>
+
+---
 <p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a></p>
 <!-- Remove above link if you don't want to attibute -->
