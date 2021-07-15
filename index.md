@@ -25,8 +25,8 @@ QGIS | Mapbox GL JS | Mapbox Studio | Javascript </p>
 
 ---
 
-## <a href="/Open-Source-GIS/lab9" target="_blank">Project 3 Title</a>
-<a href="/Open-Source-GIS/lab9" target="_blank"><img src="images/Lab9.png"/></a>br>
+## <a href="/Open-Source-GIS/lab9" target="_blank">Network, textual, and spatial analysis of Tweets</a>
+<a href="/Open-Source-GIS/lab9" target="_blank"><img src="images/Lab9.png"/></a><br>
 Geotagged tweets can be useful in the study of natural disasters and could potentially be used as a tool for emergency responders. I downloaded geotagged tweets to rStudio through the API to perform network and textual analysis and then used PostGIS and GeoDa to for spatial analysis. Specifically, I examined twitter activity during Hurricane Dorian that devastated the Bahamas and affected the East Coast of the United States.
 <p style="text-align: center; color:grey;">**<br>
 R Studio | GeoDa | PostGIS/PostgreSQL | QGIS </p>
