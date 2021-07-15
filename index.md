@@ -64,5 +64,5 @@ As an exercise and introduction to open source GIS, I made a QGIS model with an 
 DataPlotly | QGIS </p>
 
 ---
-<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a><Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+<p style="font-size:11px">Page template forked from <a href="https://github.com/evanca/quick-portfolio">evanca</a>Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
 <!-- Remove above link if you don't want to attibute -->
