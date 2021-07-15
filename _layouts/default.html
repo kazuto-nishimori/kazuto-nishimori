@@ -38,7 +38,7 @@ html, body, #mapid {
   <body>
     <div class="wrapper">
       <header>
-        <h1><center>{{ site.title | default: site.github.repository_name }}</center></h1>
+        <a href="https://www.linkedin.com/in/kazutonishimori/"><h1><center>{{ site.title | default: site.github.repository_name }}</center></h1></a>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -50,9 +50,6 @@ html, body, #mapid {
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
         {% endif %}
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="https://www.linkedin.com/in/kazutonishimori/">LinkedIn</a></p>
-        {% endif %}
 
         {% if site.show_downloads %}
         <ul class="downloads">
