@@ -4,7 +4,7 @@
 
 ## <a href="/Portfolio/Maps/Flickr" target="_blank">Flickr Photo Density Map</a>
 <a href="/Portfolio/Maps/Flickr" target="_blank"><img src="images/Flickr_Map.png"/></a><br>
-Using Flickr’s API, I counted every instance of a geotagged photo for each city and mapped them using a dynamic hex-grid choropleth map. Using the bottom slider or the legend’s inputs, you can change the classification of the data, allowing you to see local variation that would be otherwise invisible in a small-scale (i.e. zoomed out) map. Clicking on any location will show you some photos taken there, as well as a link to Google Street View.
+Using Flickr’s API, I counted every instance of a geotagged photo in Tokyo and Manhattan and mapped them using a dynamic hex-grid choropleth map. Choropleth maps are used to map everything, from election predictions to Covid cases to the racial make up of a city. However they have a two fundamental flaws that misguide and deceive the reader: 1) large geographic areas carry more visual weight (e.g. a US election map is way more red than blue by area) and 2) classification (numbers at which color breaks happen) <a href='https://kaitlyncoleman22.files.wordpress.com/2015/11/lab66.jpg?w=1424'>can be used to tell completely different stories</a>. My map is possibly the first in the world to fix both of these issues by adding a dynamic classification to a uniform hexagon grid. Check it out!
 <p style="text-align: center; color:grey;">**<br>
 QGIS | Mapbox GL JS | Python | GeoPandas | Javascript </p>
 
@@ -12,14 +12,13 @@ QGIS | Mapbox GL JS | Python | GeoPandas | Javascript </p>
 
 ## <a href="/Portfolio/Maps/Arizona-Migration" target="_blank">Arizona Border Death Map</a>
 <a href="/Portfolio/Maps/Arizona-Migration" target="_blank"><img src="images/Arizona_Map.png"/></a><br>
-Every year, hundreds of migrants perish at the Southern border as they make their way across the scorching Sonoran desert. Deaths were rare before the Clinton administration, when the border was first militarized with the use of stadium lights, thermal sensors, check points, vehicle barriers and of course, walls. These efforts have been pushing migrants to increasingly dangerous paths, and even though border crossing has decreased significantly over the last two decades, the number of deaths has not.
-This animated map is intended to show the evolving geography of migrant deaths as new patrol stations and border walls are erected. Once the animation is over, a slider will appear that allows you to scroll through time. Zooming in will reveal each victim’s name, age, and location.
+This is an animated map that shows the evolving geography of migrant deaths as new patrol stations and border walls are erected. Even though border crossers have significantly decreased in the past two decades, the number of deaths have not because border patrol have pushed migrants into increasingly remote and dangerous areas. 
 <p style="text-align: center; color:grey;">**<br>
 QGIS | Mapbox GL JS | Mapbox Studio | Javascript </p>
 
 ---
 
-## GIS projects 
+## GIS projects
 
 ---
 
