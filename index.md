@@ -1,4 +1,4 @@
-## Webmaps
+# <center>Webmaps</center>
 
 ---
 
@@ -21,7 +21,7 @@ QGIS | Mapbox GL JS | Mapbox Studio | Javascript </p>
 <br>
 <br>
 
-## GIS projects
+# <center>GIS projects</center>
 
 ---
 
