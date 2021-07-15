@@ -12,11 +12,14 @@ QGIS | Mapbox GL JS | Python | GeoPandas | Javascript </p>
 
 ## <a href="/Portfolio/Maps/Arizona-Migration" target="_blank">Arizona Border Death Map</a>
 <a href="/Portfolio/Maps/Arizona-Migration" target="_blank"><img src="images/Arizona_Map.png"/></a><br>
-This is an animated map that shows the evolving geography of migrant deaths as new patrol stations and border walls are erected. Even though border crossers have significantly decreased in the past two decades, the number of deaths have not because border patrol have pushed migrants into increasingly remote and dangerous areas. 
+This is an animated map that shows the evolving geography of migrant deaths as new patrol stations and border walls are erected. Even though border crossers have significantly decreased in the past two decades, the number of deaths have not because border patrol have pushed migrants into increasingly remote and dangerous areas.
 <p style="text-align: center; color:grey;">**<br>
 QGIS | Mapbox GL JS | Mapbox Studio | Javascript </p>
 
 ---
+
+<br>
+<br>
 
 ## GIS projects
 
