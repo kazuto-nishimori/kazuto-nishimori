@@ -49,9 +49,9 @@ R Studio | GeoDa | PostGIS/PostgreSQL | QGIS </p>
 
 ---
 
-## <a href="/Open-Source-GIS/lab8" target="_blank">Reproducibility and replicability</a>
+## <a href="/Open-Source-GIS/lab8" target="_blank">Data anonymization vs uncertainty</a>
 <a href="/Open-Source-GIS/lab8" target="_blank"><img src="images/Lab8.png"/></a><br>
-Reproducibility and replicability are arguably the greatest issues that social science (and natural science) research faces at this moment. In geography, studying reproducibility is complicated since no two places are the same (that's the point of the whole discipline!). However, we can test replicability using the same methods and data that authors use in their research (or can we?). Here, I try to replicate a vulnerability assessment of Malawi and compare my results with the authors'.
+Reproducibility and replicability (R&R) are arguably the greatest issues that social science research faces at this moment. For an environmental vulnerability assessment that could spell the difference between a region receiving millions of dollars in aid or none at all, having a reproducible result is more important than ever. I look at how the authors of a Malawi vulnerability assessment fail to consider the uncertainty in their research results that arises from the spatial anonymization of DHS household survey data points, and how this could affect R&R of this research.
 <p style="text-align: center; color:grey;">**<br>
 PostGIS/PostgreSQL | QGIS </p>
 
