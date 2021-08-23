@@ -3,7 +3,7 @@ var ABCJS = require('abcjs');
 var synth = new ABCJS.synth.CreateSynth();
 var abcjsEditor;
 var visualObj
-let notedur = 2000;
+let notedur = 1500;
 let notes = ['E,,','F,,','G,,','A,','B,','C,','D,','E,','F,','G,','A','B','C','D','E','F','G',"a","b","c","d","e"]
 notes = notes.slice(0,10)
 let randomNums = Array.from({length: 1000}, () => Math.floor(Math.random() * notes.length)).join('');
@@ -52,7 +52,7 @@ function thisnote(numberOfNotes){
         frontEndAcc = accOnNote == +1 ? ''  : 'b'
       }
     }
-    notesToPlay = notesToPlay + note
+    notesToPlay = notesToPlay + note + '4'
     notesToShow = notesToShow + ' ' + noteName + frontEndAcc
   }
 
