@@ -72,7 +72,7 @@ function thisnote(i){
 
   let accOnNote = [1,-1,0,0,0,0,0,0][Math.floor(Math.random()*8)];
 
-  let alreadyMarked = keyNum > 0 ? accArray.slice(0,keyNum) : keyNum > 0 ? accArray.slice(7+keyNum) : []
+  let alreadyMarked = keyNum > 0 ? accArray.slice(0,keyNum) : keyNum < 0 ? accArray.slice(7+keyNum) : []
   let sharpOrFlat = alreadyMarked.indexOf(noteName)
 
   if (sharpOrFlat == -1) { // this note has no sharp or flat
