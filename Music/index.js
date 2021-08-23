@@ -26,6 +26,12 @@ function thisnote(numberOfNotes){
   keyNum += sig[1] == '#' ? 7 : sig[1] == 'b' ? -7 : 0;
   keyNum -= sig[2] == 'min' ? 3 : 0
 
+  let allNotes = ['C','D','E','F','G','A','B'];
+  let startNote = (parseInt(document.getElementById('lowNote').value) + 2) % 7 //0 based index of start note visavis allNotes
+  let rootNote = allNotes.indexOf(sig[0])
+  let mode = ['Ionian','Dorian','Phrygian','Lydian','Mixolydian','Aeolian','Locrian'][(startNote-rootNote + 7) % 7]
+  document.getElementById('mode').innerText = allNotes[startNote] + ' ' + mode;
+
   let notesToPlay = ''
   let notesToShow = ''
   let lownote = parseInt(document.getElementById('lowNote').value)
