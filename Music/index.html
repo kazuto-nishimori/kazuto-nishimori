@@ -13,7 +13,7 @@
 <body style = "margin: 0; height:100%; overflow:hidden;">
 	<div style = "display:flex; font-size:20px; align-items:center; margin:10px">
     <div style = "margin:20px">
-  		<label for="cars">Choose the key: </label>
+  		<label for="key">Choose the key: </label>
     	<select name="key" id="key">
       	<option value="A">A</option>
       	<option value="B">B</option>
@@ -34,6 +34,15 @@
     	</select>
     </div>
     <div style = 'margin-left:20px'><p id='message' style="color:red;"></p></div>
+    <label for="numNotes">Number of notes: </label>
+    <select name="numNotes" id="numNotes">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
     <div id = "playbutton" style = 'margin-left:20px; background:#ededed; vertical-align: middle;cursor: pointer;'><p style="">Play Sound</p></div>
 	</div>
   <div class="container" id='main' style = 'text-align:center'>
