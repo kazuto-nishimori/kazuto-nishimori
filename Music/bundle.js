@@ -3,11 +3,7 @@ var ABCJS = require('abcjs');
 var synth = new ABCJS.synth.CreateSynth();
 var abcjsEditor;
 var visualObj
-let notedur = 1500;
-let notes = ['E,,','F,,','G,,','A,','B,','C,','D,','E,','F,','G,','A','B','C','D','E','F','G',"a","b","c","d","e"]
-notes = notes.slice(0,10)
-let randomNums = Array.from({length: 1000}, () => Math.floor(Math.random() * notes.length)).join('');
-randomNums = randomNums.replace(/(\d)\1+/g,function(m,c){return c}).split('')
+let notedur = 1000;
 
 function enharmonic(L,A,M,not) {
   document.getElementById('message').innerText = not == 1 ? '' : 'Showing the enharmonic '+L+A+M;
@@ -15,6 +11,7 @@ function enharmonic(L,A,M,not) {
 }
 
 function thisnote(numberOfNotes){
+  let notes = ['E,,','F,,','G,,','A,,','B,,','C,','D,','E,','F,','G,','A,','B,','C','D','E','F','G',"A","B","c","d"]
   let sig = [document.getElementById('key').value,document.getElementById('acc').value,document.getElementById('majmin').value]
   sig = sig.join('') == 'B#maj' ? enharmonic('C', '', 'maj') : // B#maj, E#maj, A#maj, D#maj, G#maj, Dbmin, Gbmin, Cbmin, Fbmin
   sig.join('') == 'E#maj' ? enharmonic('F', 'b', 'maj') :
@@ -30,9 +27,11 @@ function thisnote(numberOfNotes){
   keyNum += sig[1] == '#' ? 7 : sig[1] == 'b' ? -7 : 0;
   keyNum -= sig[2] == 'min' ? 3 : 0
 
-
   let notesToPlay = ''
   let notesToShow = ''
+  let lownote = parseInt(document.getElementById('lowNote').value)
+  notes = notes.slice(lownote,lownote + 8)
+  console.log(notes)
   for (let n = 0; n < numberOfNotes; n++) {
     let accOnNote = [1,-1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0][Math.floor(Math.random()*8)];
     let note = notes[parseInt(Math.floor(Math.random() * notes.length))];
@@ -50,26 +49,34 @@ function thisnote(numberOfNotes){
       } else if (keyNum < 0) {
         note = accOnNote == +1 ? '=' + note : note
         frontEndAcc = accOnNote == +1 ? ''  : 'b'
+        if (keyNum < -1 && note == 'E,,') {
+          note = '=E,,'
+          frontEndAcc = ''
+        }
       }
     }
-    notesToPlay = notesToPlay + note + '4'
+    notesToPlay = notesToPlay + note + '4|'
     notesToShow = notesToShow + ' ' + noteName + frontEndAcc
   }
 
   document.getElementById('note').innerText = notesToShow.trim()
   console.log(notesToPlay.trim())
 
-  return "X:1\nK:"+sig.join('')+"\nV:V1 clef=bass\n[V:V1]||"+notesToPlay.trim()+"|\n";
+  return "X:1\nK:"+sig.join('')+"\nV:V1 clef=bass\n[V:V1]||"+notesToPlay.trim()+"\n";
 }
 
 window.onload = function () {
   let i = 1
   document.getElementById('main').addEventListener('click', event => {
     i++
-    visualObj = ABCJS.renderAbc("paper", thisnote(parseInt(document.getElementById('numNotes').value)),{scale:5})
+    visualObj = ABCJS.renderAbc("paper", thisnote(parseInt(document.getElementById('numNotes').value)),{scale:5,add_classes:true})
     document.getElementById('note').style.visibility = 'hidden'
+    let bars = document.querySelector("#paper").querySelectorAll(".abcjs-bar")
+    for (let i = 1; i < bars.length-1; i++) {
+      bars[i].style.opacity = 0.3
+    }
   });
-  visualObj = ABCJS.renderAbc("paper", thisnote(parseInt(document.getElementById('numNotes').value)),{scale:5});
+  visualObj = ABCJS.renderAbc("paper", thisnote(parseInt(document.getElementById('numNotes').value)),{scale:5,add_classes:true});
   document.addEventListener('keypress',  playsound);
   document.getElementById('playbutton').addEventListener('click',playsound);
   function playsound() {
