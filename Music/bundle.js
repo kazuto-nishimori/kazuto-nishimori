@@ -30,7 +30,8 @@ function thisnote(numberOfNotes){
   let allNotes = ['C','D','E','F','G','A','B'];
   let startNote = (parseInt(document.getElementById('lowNote').value) + 2) % 7 //0 based index of start note visavis allNotes
   let rootNote = allNotes.indexOf(sig[0])
-  let mode = ['Ionian','Dorian','Phrygian','Lydian','Mixolydian','Aeolian','Locrian'][(startNote-rootNote + 7) % 7]
+  let minorException = sig[2] == 'min' ? 5 : 0
+  let mode = ['Ionian','Dorian','Phrygian','Lydian','Mixolydian','Aeolian','Locrian'][(startNote + minorException-rootNote + 7) % 7]
   document.getElementById('mode').innerText = allNotes[startNote] + ' ' + mode;
 
   let notesToPlay = ''
@@ -61,6 +62,7 @@ function thisnote(numberOfNotes){
         }
       }
     }
+    note = note == '^E,,' ? 'E,,' : note
     notesToPlay = notesToPlay + note + '4|'
     notesToShow = notesToShow + ' ' + noteName + frontEndAcc
   }
