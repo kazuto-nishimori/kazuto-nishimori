@@ -62,7 +62,7 @@ function thisnote(numberOfNotes){
         }
       }
     }
-    note = note == '^E,,' ? 'E,,' : note
+    note = note == '^E,,' ? 'E,,' : note;
     notesToPlay = notesToPlay + note + '4|'
     notesToShow = notesToShow + ' ' + noteName + frontEndAcc
   }
